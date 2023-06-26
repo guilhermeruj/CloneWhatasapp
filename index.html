@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comunic - A2Bot</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="toolbar-container">
+          <p class="conversas">Conversa</p>
+          <div class="auxicons-toolbar-container">
+            <i class="bi bi-arrow-clockwise"></i>
+            <i class="bi bi-chat-dots"></i>
+            <i class="bi bi-three-dots-vertical"></i>
+          </div>
+        </div>
+        <div class="notification-container">
+          <i class="bi bi-bell-slash"></i>
+          <p class="receive-notification">
+            Receba Notificações de novas mensagens
+          </p>
+          <p class="activate-notification">
+            Ative as Notificações na area de trabalho<i
+              class="bi bi-caret-right-fill"
+            ></i>
+          </p>
+        </div>
+        <div class="search-container">
+          <i id="contact-search" class="bi bi-search"></i>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Procurar conversa!"
+          />
+        </div>
+        <div class="contact-container">
+          <div class="contact-box active-chat">
+            <img src="./img/avatar-02.png" class="user-photo" alt="" />
+            <div class="user-info">
+              <p class="user-name">Sabrina</p>
+              <p class="user-messagepreview">
+                <i class="bi bi-check-all"></i>Oi, tudo bem?
+              </p>
+            </div>
+            <div class="message-info">
+              <p class="message-time">22:40</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-container">
+          <div class="contact-box">
+            <img src="./img/avatar-04.png" class="user-photo" alt="" />
+            <div class="user-info">
+              <p class="user-name">João José</p>
+              <p class="user-messagepreview">OU ta ai?</p>
+            </div>
+            <div class="message-info">
+              <p class="message-time">12:30</p>
+              <p class="message-pending">12</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-box">
+            <img src="./img/avatar-03.png" class="user-photo" alt="" />
+            <div class="user-info">
+              <p class="user-name">Creusa</p>
+              <p class="user-messagepreview">Me antende logo uai!</p>
+            </div>
+            <div class="message-info">
+              <p class="message-time">14:10</p>
+              <p class="message-pending">5</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <main class="chat-container">
+        <nav class="chat-navbar">
+          <div class="contactinfo-container">
+            <img src="./img/avatar-02.png" alt="" class="user-photo" />
+            <p class="user-name">Sabrina Matos</p>
+          </div>
+          <ul class="chattools-container">
+            <li><i class="bi bi-search"></i></li>
+            <li><i class="bi bi-paperclip"></i></li>
+            <li><i class="bi bi-arrow-clockwise"></i></li>
+          </ul>
+        </nav>
+        <div class="message-contaner">
+          <div class="bg-image"></div>
+          <dig class="chat-messages">
+            <p class="guest-messages">Olá, Tudo bem</p>
+            <p class="user-messages">Opa, Tudo bem</p>
+          </dig>
+        </div>
+        <div class="sendmessage-container">
+          <!-- <i class="bi bi-emoji-smile"></i> -->
+          <input
+            type="text"
+            name="message"
+            class="userinput"
+            id="chatmessage"
+            placeholder="Digite sua mensagem"
+          />
+          <i class="bi bi-send-fill"></i>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
